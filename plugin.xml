@@ -1,12 +1,30 @@
-    <?xml version="1.0" encoding="UTF-8"?>
-    <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-            id="progiro-sync-tdk" version="0.0.1">
-        <name>Progiro Sync TDK</name>
-        <description>A simple plugin to access Sync tdk functionality</description>
-        <license>GPL</license>
-        <keywords>cordova, tdk</keywords>
-        <js-module src="www/device.js" name="device">
-            <clobbers target="device" />
-        </js-module>
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="progiro.sync.tdk" version="0.0.1">
+    <name>Progiro Sync TDK</name>
+    <description>A simple plugin to access Sync tdk functionality</description>
+    <license>GPL</license>
+    <keywords>cordova, tdk</keywords>
+    
+    <engines>
+        <engine name="cordova" version=">=3.4.0"/>
+    </engines>
+    
+    <asset src="www/Sync.js" target="www/Sync.js"/>
+    
+    <js-module src="www/Sync.js" name="Sync">
+        <clobbers target="sync" />
+    </js-module>
+                
+    <platform name="android">
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Hello">
+                <param name="android-package" value="progiro.sync.tdk"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/Sync.java" target-dir="src/com/example/plugin/"/>
+    </platform>
         
-    </plugin>
+</plugin>
