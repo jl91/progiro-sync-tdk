@@ -1,1 +1,1 @@
-Cordova Plugin SuncTDK
+Cordova Plugin SyncTDK
