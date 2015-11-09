@@ -1,0 +1,12 @@
+    <?xml version="1.0" encoding="UTF-8"?>
+    <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+            id="cordova-plugin-device" version="0.2.3">
+        <name>Progiro Sync TDK</name>
+        <description>A simple plugin to access Sync tdk functionality</description>
+        <license>GPL</license>
+        <keywords>cordova, tdk</keywords>
+        <js-module src="www/device.js" name="device">
+            <clobbers target="device" />
+        </js-module>
+        
+    </plugin>
