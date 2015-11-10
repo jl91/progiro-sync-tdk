@@ -1,0 +1,20 @@
+{
+    "version": "0.0.1",
+    "name": "progiro-sync-tdk",
+    "cordova_name": "Toast",
+    "description": "Lorem ipsum dolor sit amet ",
+    "license": "MIT",
+    "repo": "https://github.com/jl91/progiro-sync-tdkPlugin.git",
+    "keywords": [
+        "Sync"
+    ],
+    "platforms": [
+        "android"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=3.0.0"
+        }
+    ]
+}
