@@ -1,7 +1,7 @@
 //function Sync() {
 //}
 //
-//Sync.prototype.findByMessage = function (message, type, successCallback, errorCallback) {
+//Sync.prototype.findByMessage = function (message, successCallback, errorCallback) {
 //   switch(type){
 //       
 //   }
@@ -21,6 +21,7 @@
 //};
 //
 //cordova.addConstructor(Sync.install);
+
 module.exports = {
     alert: function (title, message, buttonLabel, successCallback) {
         cordova.exec(successCallback,

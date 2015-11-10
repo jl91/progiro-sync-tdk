@@ -16,7 +16,7 @@
 
     <!-- android -->
     <platform name="android">
-        <config-file target="res/xml/config.xml" parent="/*">
+        <config-file target="res/xml/config.xml"  parent="/*">
             <feature name="Alert">
                 <param name="android-package" value="my.teste.plugin.alert.Alert" />
             </feature>
